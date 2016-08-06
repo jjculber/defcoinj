@@ -35,7 +35,7 @@ public class MainNetParams extends NetworkParameters {
         dumpedPrivateKeyHeader = 158; //This is always addressHeader + 128
         addressHeader = 30;
         p2shHeader = 5;
-        acceptableAddressCodes = new int[] { addressHeader };
+        acceptableAddressCodes = new int[] { addressHeader, p2shHeader };
         port = 1337;
         packetMagic = 0xfbc0b6db;
         genesisBlock.setDifficultyTarget(0x1e0ffff0L);
